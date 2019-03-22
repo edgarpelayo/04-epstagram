@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FontAwsome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS <-->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <title>Instagram Bootstrap</title>
+  </head>
+  <body>
+  	<div class="container-fluid pl-0 pr-0">
+  		<!--Este row corresponde al header-->
+  		<div class="row ml-auto bg-light">
+
+        <!-- DIV PARA MANEJO DEL ICONO DE IG Y LOGO IG-->
+
+  			<div class="col-6 d-print-inline p-2">
+          <span style="font-size: 32px; ">
+            <i class="fab fa-instagram"></i>  
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png" style="height: 55px">
+          </span>
+          
+  			</div>
+
+
+        <!-- DIV PARA MANEJO DEL OPCIONES Y CONFIGURACION DE IG-->
+
+  			<div class="col-6">
+  				
+          <!--<div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Input group example" aria-describedby="btnGroupAddon">
+          </div>
+        -->
+          <div class="dropdown show float-right p-3">
+            <button type="button" class="btn btn-success">Create a new Post</button>
+            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-cog"></i>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+         
+
+  			</div>
+  		</div>	 
+
+  		<!--Este row corresponde al espacio para seleccionar el tipo de feed a mostrar
+
+      https://www.shareicon.net/data/32x32/2015/09/14/640765_square_512x512.png-->
+  		
+<!--
+      <div class="row text-center">
+  			<div class="col-12">
+  				<button class="btn" href="#feed-matriz" >
+            <i class="fas fa-th"></i>
+          </button>
+          <button class="btn" href="#feed-vertical">
+            <i class="fas fa-square"></i>
+          </button>
+  			</div>
+  		</div>
+
+-->
+      <nav>
+        <div class="nav nav-tabs justify-content-center border-0" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active border-0" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+              <i class="fas fa-th"></i>
+          </a>
+          <a class="nav-item nav-link border-0" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+              <i class="fas fa-square"></i>
+          </a>
+        </div>
+      </nav>
+
+
+<!---------------------------------------------------------------------------------------------------------------
+  Contenido del TAB a continuación
+
+-->
+      <div class="tab-content" id="nav-tabContent">
+        
+
+        <!--Este row corresponde al espacio para mostrar contenido en forma de matriz-->
+
+
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row ml-auto mr-auto">
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+          </div>
+          <div class="row ml-auto mr-auto">
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+          </div>
+          <div class="row ml-auto mr-auto">
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+          </div>
+          <div class="row ml-auto mr-auto">
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+            <div class="col-4 p-3">
+              <img src="http://lorempixel.com/400/200" alt="">
+            </div>
+          </div>
+
+         <!--Este row corresponde al espacio para mostrar contenido en forma vertical-->
+
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            
+            <div class="row container-fluid">
+               <div class="col-3"></div>
+               <div class="col-6 h-100">
+                  
+
+                  <div class="post-photo width=device-width rounded">
+                     <div class="row bg-white">
+                        Header
+                     </div>
+                     <div class="row">
+                        <img src="http://lorempixel.com/400/200">
+                     </div>
+                     <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eius in quibusdam consequuntur repellendus vero quia doloremque aliquid, accusantium. Quaerat, explicabo. Suscipit, itaque, dolore? Vitae error, ea rem quisquam iste inventore neque eveniet debitis delectus odio rerum iure ad eos commodi, qui dolorem consequuntur nihil, in praesentium sapiente labore officia.
+                     </div>
+
+                  </div>
+
+
+
+               </div>
+               <div class="col-3"></div>
+            </div>
+        </div>
+        
+      </div>
+
+  		
+    			
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js" ></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
